@@ -24,8 +24,9 @@ public class ResultData extends HttpServlet {
                 count = count + Integer.parseInt(book);
             }
         }
+        String total ="￥"+count+".0";
         HttpSession session = req.getSession();
-        session.setAttribute("total", count);
+        session.setAttribute("total", total);
         resp.sendRedirect("/result.jsp");
     }
 }

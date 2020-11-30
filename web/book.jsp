@@ -18,22 +18,22 @@
      <th>图书名</th>
      <th>图书价格</th>
      <tr>
-       <td><input type="checkbox" name="book" value="50"></td>
-       <td><input type="text" name="hong" value="《红楼梦》"></td>
+       <td><input type="checkbox" name="book" value="50-《红楼梦》"></td>
+       <td><input type="text" name="bookName" value="《红楼梦》"></td>
        <td><input type="text" name="price1" value="￥50.0"></td>
      </tr>
      <tr>
-       <td><input type="checkbox" name="book" value="80"></td>
+       <td><input type="checkbox" name="book" value="80-《西游记》"></td>
        <td align="center"><input type="text" name="xi" value="《西游记》"></td>
        <td align="center"><input type="text" name="price2" value="￥80.0"></td>
      </tr>
      <tr>
-       <td><input type="checkbox" name="book" value="30"></td>
+       <td><input type="checkbox" name="book" value="30-《水浒传》"></td>
        <td align="center"><input type="text" name="shui" value="《水浒传》"></td>
        <td align="center"><input type="text" name="price3" value="￥30.0"></td>
      </tr>
      <tr>
-       <td><input type="checkbox" name="book" value="70"></td>
+       <td><input type="checkbox" name="book" value="70-《三国演义》"></td>
        <td align="center"><input type="text" name="san" value="《三国演义》"></td>
        <td align="center"><input type="text" name="price4" value="￥70.0"></td>
      </tr>

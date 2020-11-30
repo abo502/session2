@@ -28,18 +28,25 @@
 </form>
 <br>
 <br>
-<table align="center" border="1px">
-    <th>用户名</th>
-    <th>图书总价</th>
-    <tr>
-        <%String name1= (String) session.getAttribute("name");
-               if (name1.equals("")){%>
-        <td> <%=session.getAttribute("uname")%> </td>
-               <%}else {%>
-        <td> <%=session.getAttribute("name")%>> </td>
-               <%}%>
-        <td> <%=session.getAttribute("total")%> </td>>
-    </tr>
-</table>
+<div style="height:500px; width:500px; margin:0 auto;text-align: center">
+    <h3>用户名:</h3>
+    <%String name1= (String) session.getAttribute("name");
+        if (name1.equals("")){%>
+    <%=session.getAttribute("uname")%>
+    <%}else {%>
+    <%=session.getAttribute("name")%>>
+    <%}%>
+    <h3>图书名:</h3>
+    <hr>
+    <%=session.getAttribute("total")%>
+    <hr>
+    <h3>图书总价:</h3>
+    <%=session.getAttribute("total")%>
+</div>
+
+
+
+
+
 </body>
 </html>
