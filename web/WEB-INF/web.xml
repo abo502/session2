@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+    <servlet>
+        <servlet-name>UserData</servlet-name>
+        <servlet-class>UserData</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UserData</servlet-name>
+        <url-pattern>/book</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ResultData</servlet-name>
+        <servlet-class>ResultData</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ResultData</servlet-name>
+        <url-pattern>/result</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AddName</servlet-name>
+        <servlet-class>AddName</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>AddName</servlet-name>
+        <url-pattern>/addName</url-pattern>
+    </servlet-mapping>
+
+</web-app>
