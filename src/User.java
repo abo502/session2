@@ -5,7 +5,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
-public class UserData extends HttpServlet {
+public class User extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         this.doPost(req, resp);
@@ -18,6 +18,6 @@ public class UserData extends HttpServlet {
         String name=req.getParameter("username");
         HttpSession session = req.getSession();
         session.setAttribute("name",name);
-        resp.sendRedirect("/book.jsp");
+        resp.sendRedirect("/clazz.jsp");
     }
 }

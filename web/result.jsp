@@ -11,9 +11,9 @@
     <title>结算页面</title>
 </head>
 <body>
-<h1 align="center">图书列表:</h1>
-<br>
-<form action="/addName" method="post">
+<div style="height:500px; width:500px;text-align: center; margin: auto;border: 2px solid;border-radius:10px ">
+    <h1 style="color: greenyellow">课程列表:</h1>
+<form action="/add" method="post">
     <%String user= (String) session.getAttribute("name");
         if (user.equals("")){
     %>
@@ -28,7 +28,6 @@
 </form>
 <br>
 <br>
-<div style="height:500px; width:500px; margin:0 auto;text-align: center">
     <h3>用户名:</h3>
     <%String name1= (String) session.getAttribute("name");
         if (name1.equals("")){%>
@@ -36,14 +35,15 @@
     <%}else {%>
     <%=session.getAttribute("name")%>
     <%}%>
-    <h3>图书名:</h3>
-    <hr>
-    <%List<String> books= (List<String>) session.getAttribute("books");
-        for (String book : books) {%>
-    <%=book%>
-    <hr>
+    <h3>课程名称:</h3>
+    <br>
+    <%List<String> clazzs= (List<String>) session.getAttribute("clazzs");
+        for (String clazz : clazzs) {%>
+    <%=clazz%>
+    <br>
+    <br>
     <%}%>
-    <h3>图书总价:</h3>
+    <h3>课程总价:</h3>
     <%=session.getAttribute("total")%>
 </div>
 

@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class ResultData extends HttpServlet {
+public class Result extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         this.doPost(req, resp);
@@ -18,20 +18,20 @@ public class ResultData extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         req.setCharacterEncoding("UTF-8");
         resp.setCharacterEncoding("gbk");
-        String[] data = req.getParameterValues("book");
+        String[] data = req.getParameterValues("clazz");
         int count = 0;
-        List<String> bookNames = new ArrayList<>();
+        List<String> clazzNames = new ArrayList<>();
         if (data!=null) {
-            for (String book : data) {
-                String[] arr = book.split("-");
+            for (String clazz : data) {
+                String[] arr = clazz.split("-");
                     count+=Integer.parseInt(arr[0]);
-                    bookNames.add(arr[1]);
+                    clazzNames.add(arr[1]);
             }
         }
         String total ="￥"+count+".0";
         HttpSession session = req.getSession();
         session.setAttribute("total", total);
-        session.setAttribute("books",bookNames);
+        session.setAttribute("clazzs",clazzNames);
         resp.sendRedirect("/result.jsp");
     }
 }

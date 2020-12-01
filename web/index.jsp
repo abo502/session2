@@ -11,9 +11,9 @@
     <title>请输入用户名</title>
 </head>
 <body>
-<form action="/book" method="post">
-    <h1 align="center" style="color: red">请输入姓名:</h1><br>
-    <div align="center">
+<form action="/clazz" method="post">
+    <div align="center" style="border: 1px solid;width: 500px; height: 200px; margin: 0 auto; background-color: whitesmoke; border-radius: 5px">
+    <h1 align="center" style="color: greenyellow">请输入姓名:</h1><br>
     <input type="text" name="username">
     <br>
     <br>
