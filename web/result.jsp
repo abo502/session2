@@ -1,4 +1,4 @@
-<%--
+<%@ page import="java.util.List" %><%--
   Created by IntelliJ IDEA.
   User: A11200321050135
   Date: 2020/11/30
@@ -34,12 +34,15 @@
         if (name1.equals("")){%>
     <%=session.getAttribute("uname")%>
     <%}else {%>
-    <%=session.getAttribute("name")%>>
+    <%=session.getAttribute("name")%>
     <%}%>
     <h3>图书名:</h3>
     <hr>
-    <%=session.getAttribute("total")%>
+    <%List<String> books= (List<String>) session.getAttribute("books");
+        for (String book : books) {%>
+    <%=book%>
     <hr>
+    <%}%>
     <h3>图书总价:</h3>
     <%=session.getAttribute("total")%>
 </div>
