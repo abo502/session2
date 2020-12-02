@@ -18,6 +18,6 @@ public class User extends HttpServlet {
         String name=req.getParameter("username");
         HttpSession session = req.getSession();
         session.setAttribute("name",name);
-        resp.sendRedirect("/clazz.jsp");
+        resp.sendRedirect("/food.jsp");
     }
 }

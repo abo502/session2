@@ -8,12 +8,12 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>请输入用户名</title>
+    <title>用户登录</title>
 </head>
 <body>
-<form action="/clazz" method="post">
-    <div align="center" style="border: 1px solid;width: 500px; height: 200px; margin: 0 auto; background-color: whitesmoke; border-radius: 5px">
-    <h1 align="center" style="color: greenyellow">请输入姓名:</h1><br>
+<form action="/food" method="post">
+    <div align="center" style="border: 2px solid;width: 400px; height: 250px; margin: 0 auto; background-color: indianred; border-radius: 25px">
+    <h1 align="center" style="color: greenyellow">请输入用户名:</h1><br>
     <input type="text" name="username">
     <br>
     <br>

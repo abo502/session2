@@ -5,7 +5,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
-public class Add extends HttpServlet {
+public class Login extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         this.doPost(req, resp);
@@ -16,9 +16,9 @@ public class Add extends HttpServlet {
         req.setCharacterEncoding("UTF-8");
         resp.setCharacterEncoding("gbk");
 
-        String uname = req.getParameter("uname");
+        String username = req.getParameter("username");
         HttpSession session = req.getSession();
-        session.setAttribute("uname",uname);
+        session.setAttribute("username",username);
         resp.sendRedirect("/result.jsp");
     }
 }
